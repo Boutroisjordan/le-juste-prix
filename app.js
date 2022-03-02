@@ -24,9 +24,10 @@ function play(firstNumber, guessPrice) {
     } else {
         if (firstNumber == guessPrice) {
             window.alert('Gagner !!!!')
-        }
-        window.alert(`perdu ! Le prix à trouver était de ${randomPrix}. Clique sur Replay pour rejouer.`);
-    }
+        } else {
+            window.alert(`perdu ! Le prix à trouver était de ${randomPrix}. Clique sur Replay pour rejouer.`);
+        };
+    };
 
     
 };
