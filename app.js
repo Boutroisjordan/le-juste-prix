@@ -9,12 +9,10 @@ function getValue() {
 };
 
 function play(firstNumber, guessPrice) {
-
     tentatives--;
-
     if (tentatives > 0) {
         if (firstNumber == guessPrice) {
-            window.alert("gagner!")
+            window.alert("Gagner !!!!!")
         } else if (firstNumber < guessPrice) {
             window.alert(`Plus grand ! Plus que ${tentatives} tentatives`)
 
@@ -24,9 +22,13 @@ function play(firstNumber, guessPrice) {
             console.log('Veuillez insérer uniquement des chiffres entier !')
         };
     } else {
+        if (firstNumber == guessPrice) {
+            window.alert('Gagner !!!!')
+        }
         window.alert(`perdu ! Le prix à trouver était de ${randomPrix}. Clique sur Replay pour rejouer.`);
     }
 
+    
 };
 
 function replay() {
